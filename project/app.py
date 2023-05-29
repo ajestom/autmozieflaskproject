@@ -1,0 +1,24 @@
+from flask import Flask, render_template
+
+app = Flask(__name__)
+app.static_folder = 'static'
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/page1')
+def page1():
+    return render_template('page1.html')
+
+@app.route('/page2')
+def page2():
+    return render_template('page2.html')
+
+@app.route('/wordclouds')
+def wordclouds():
+    return render_template('wordclouds.html')
+
+if __name__ == '__main__':
+    app.run(port=8080)
+app.debug = True

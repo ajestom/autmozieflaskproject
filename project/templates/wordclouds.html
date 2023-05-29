@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Clouds</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('page1') }}">Page 1</a></li>
+                <li><a href="{{ url_for('page2') }}">Page 2</a></li>
+                <li><a href="{{ url_for('wordclouds') }}">Word Clouds</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>Word Clouds</h1>
+            <p>This is the Word Clouds page.</p>
+            <!-- Add word cloud images here -->
+            <!-- Use the data from the "data" folder to populate the sections dynamically -->
+        </div>
+    </div>
+</body>
+</html>
